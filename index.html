@@ -32,22 +32,28 @@
     nav {
       display: flex;
       justify-content: center;
-      background-color: #3f87a6;
+      background-color: #2c3e50;
     }
 
     .tab-button {
-      background: none;
-      border: none;
-      color: white;
-      padding: 15px 25px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
+  padding: 10px 20px;
+  background-color: white;
+  color: #2c3e50;
+  border: 1px solid transparent;
+  border-radius: 80px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+}
 
-    .tab-button.active {
-      background-color: #2c3e50;
-    }
+.tab-button:hover {
+  background-color: #ecf0f1; /* subtle hover */
+  border: 1px solid #2c3e50;
+  border-radius: 50px;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.15);
+}
 
     .tab-content {
       display: none;
@@ -110,7 +116,7 @@
 </header>
 
 <nav>
-  <button class="tab-button active" onclick="openTab(event, 'kra')">KRA's</button>
+  <button class="tab-button" onclick="openTab(event, 'kra')">KRA's</button>
   <button class="tab-button" onclick="openTab(event, 'kpi')">KPI's</button>
 </nav>
 
